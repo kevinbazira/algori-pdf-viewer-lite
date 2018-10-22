@@ -12,6 +12,10 @@ Requires at least: WP 4.9.6
 
 Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display PDF documents directly on your website.
 
+<p align="center">
+  <img src="https://ps.w.org/algori-pdf-viewer/assets/screenshot-1.gif" alt="Algori PDF Viewer">
+</p>
+
 # Description 
 
 Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display PDF documents on your website. **This will allow your visitors to view and easily interact with your PDF files directly on your site**.
