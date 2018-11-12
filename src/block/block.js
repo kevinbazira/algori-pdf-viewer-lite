@@ -148,7 +148,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 					<Toolbar>
 						<MediaUpload
 							onSelect={ onSelectPDF }
-							type="*"
+							allowedTypes={ [ 'application' ] }
 							value={ id }
 							render={ ( { open } ) => (
 								<IconButton
@@ -202,7 +202,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 						} }
 						onSelect={ onSelectPDF }
 						accept="application/pdf"
-						type="*"
+						allowedTypes={ [ 'application' ] }
 						notices={ noticeUI }
 						onError={ noticeOperations.createErrorNotice }
 					/>
