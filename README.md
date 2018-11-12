@@ -6,7 +6,7 @@ Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf 
 
 Requires at least: WP 4.9.6
 * Tested up to: WP 4.9.8
-* Stable tag: 1.0.0
+* Stable tag: 1.0.1
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -20,7 +20,7 @@ Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display
 
 Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display PDF documents on your website. **This will allow your visitors to view and easily interact with your PDF files directly on your site**.
 
-This free plugin has a lot to offer. Even more can be found in the Premium version of this Plugin, please see [all features of the Premium plugin here](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#features),
+This free plugin has a lot to offer. Even more can be found in the Premium version of this Plugin, please see [all features of the Premium plugin here](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#features).
 
 # Features
 
@@ -85,6 +85,12 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 # Changelog
 
+= 1.0.1 - Nov 12 2018 =
+* Changed: MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
+
 = 1.0.0 - Sept 13 2018 =
 * Initial Release
 
+
+Algori PDF Viewer WordPress Plugin, Copyright 2018 Kevin Bazira.
+Algori PDF Viewer is distributed under the terms of the GNU GPL.

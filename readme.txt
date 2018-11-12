@@ -5,7 +5,7 @@ Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf 
 Requires at least: 4.9.6
 Tested up to: 4.9.8
 Requires PHP: 5.6.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -15,7 +15,7 @@ Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display
 
 Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display PDF documents on your website. **This will allow your visitors to view and easily interact with your PDF files directly on your site**.
 
-This free plugin has a lot to offer. Even more can be found in the Premium version of this Plugin, please see [all features of the Premium plugin here](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#features),
+This free plugin has a lot to offer. Even more can be found in the Premium version of this Plugin, please see [all features of the Premium plugin here](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#features).
 
 == Features ===
 
@@ -39,7 +39,7 @@ This free plugin has a lot to offer. Even more can be found in the Premium versi
 
 These features are enabled by default and can't be disabled in the free version. We released a Premium Plugin with many more exciting features that will enable you to enable/disable all the PDF viewer settings as you wish.
 
-Have a look at the [Premium Plugin here](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg).
+Have a look at the [Premium Plugin here](https://codecanyon.net/item/algori-pdf-viewer-pro-for-wordpress-gutenberg/22588592).
 
 == Installation ==
 
@@ -85,5 +85,8 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 == Changelog ==
 
-= 1.0.0 - Sept 13 2018 =
+= 1.0.1 - Nov 12 2018 =
+* Changed: MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
+
+=  1.0.0 - Sept 13 2018 =
 * Initial Release
