@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: Algori PDF Viewer
+ * Plugin Name: Algori PDF Viewer Lite
  * Plugin URI: https://github.com/kevinbazira/algori-pdf-viewer-lite/
  * Description: <strong>Algori PDF Viewer</strong> is a Gutenberg Block Plugin that enables you display PDF documents on your website. <strong>This will enable your visitors view and easily interact with your PDF files directly on your site</strong>.
  * Author: Kevin Bazira
  * Author URI: http://kevinbazira.com/
- * Version: 1.0.1
+ * Version: 1.0.2
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
