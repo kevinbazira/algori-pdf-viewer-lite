@@ -4,9 +4,9 @@ Contributors: Kevin Bazira(http://kevinbazira.com)
 
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
-Requires at least: WP 4.9.6
+Requires at least: WP 4.9.8
 * Tested up to: WP 5.0
-* Stable tag: 1.0.1
+* Stable tag: 1.0.2
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -85,6 +85,14 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 # Changelog
 
+= 1.0.2 - Nov 28 2018 =
+* Added: Default PDF viewer width (600px) and height (300px)
+* Added: "Insert from URL" button to MediaPlaceholder
+* Removed: MediaPlaceholder labels name
+* Added: MediaPlaceholder labels instructions
+* Removed: BlockAlignmentToolbar
+* Added: Social call to action into README.md
+
 = 1.0.1 - Nov 12 2018 =
 * Changed: MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
 
@@ -93,4 +101,10 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 
 Algori PDF Viewer WordPress Plugin, Copyright 2018 Kevin Bazira.
+<br/>
 Algori PDF Viewer is distributed under the terms of the GNU GPL.
+
+
+_If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-pdf-viewer-lite.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-pdf-viewer-lite)
+<br/>
+_Follow me 👋 on Twitter for more projects like this_ [![Tweet to say Hi](https://img.shields.io/twitter/follow/kevinbazira.svg?style=social&label=Tweet%20@kevinbazira)](https://twitter.com/kevinbazira/)
