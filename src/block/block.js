@@ -58,9 +58,11 @@ const blockAttributes = {
 	},
 	width: {
 		type: 'number',
+		default: 600,
 	},
 	height: {
 		type: 'number',
+		default: 300,
 	},
 	contentAlign: {
 		type: 'string',
@@ -105,14 +107,6 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 	
 	attributes: blockAttributes,  // Block attributes for editing in the block inspector.
 	
-	getEditWrapperProps( attributes ) {
-		const { align, width } = attributes;
-		if ( 'left' === align || 'center' === align || 'right' === align || 'wide' === align || 'full' === align ) {
-			return { 'data-align': align, 'data-resized': !! width };
-		}
-	},
-	
-
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
 	 * This represents what the editor will render when the block is used.
@@ -127,7 +121,6 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 		
 		const updateWidth = ( width ) => setAttributes( { width: parseInt( width, 10 ) } );
 		const updateHeight = ( height ) => setAttributes( { height: parseInt( height, 10 ) } );
-		const updateAlignment = ( nextAlign ) => setAttributes( { align: nextAlign } );
 											 
 		
 		const onSelectPDF = ( media ) => {
@@ -138,13 +131,17 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			setAttributes( { url: media.url, id: media.id } );
 		};
 		
+		const onSelectURL = ( newURL ) => {
+
+			if ( newURL !== url ) {
+				setAttributes( { url: newURL, id: undefined } );
+			}
+			
+		}
+		
 		const controls = ( // Set Block and Inspector Controls
 			<Fragment>
 				<BlockControls>
-					<BlockAlignmentToolbar
-						value={ align }
-						onChange={ updateAlignment }
-					/>
 					<Toolbar>
 						<MediaUpload
 							onSelect={ onSelectPDF }
@@ -198,9 +195,10 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 						className={ className }
 						labels={ {
 							title: __( 'PDF Viewer' ),
-							name: __( 'a PDF document' ),
+							instructions: __( 'Drag a PDF, upload a new one, insert from URL or select a file from your library.' ),
 						} }
 						onSelect={ onSelectPDF }
+						onSelectURL={ onSelectURL }
 						accept="application/pdf"
 						allowedTypes={ [ 'application' ] }
 						notices={ noticeUI }
