@@ -1,12 +1,12 @@
 # Algori PDF Viewer
 
-Contributors: Kevin Bazira(http://kevinbazira.com)
+Contributors: [Kevin Bazira](http://kevinbazira.com)
 
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
-Requires at least: WP 4.9.8
-* Tested up to: WP 5.0
-* Stable tag: 1.0.2
+Requires at least: WP 5.0.0
+* Tested up to: WP 5.1.1
+* Stable tag: 1.0.3
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -40,6 +40,7 @@ This free plugin has a lot to offer. Even more can be found in the Premium versi
 * Supports keyboard shortcuts.
 * Translatable into 100+ languages.
 * Multiple PDF documents can be loaded on a single page.
+* Supports left, right, wide and full width alignments.
 * Easy to use and does not require any coding skills.
 
 These features are enabled by default and can't be disabled in the free version. We released a Premium Plugin with many more exciting features that will enable you to enable/disable all the PDF viewer settings as you wish.
@@ -85,24 +86,31 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 # Changelog
 
+= 1.0.3 - Apr 30 2019 =
+* Upgraded cgb-scripts from 1.11.1 to 1.13.0
+* Improved documentation to match WP standards
+* Added MediaUploadCheck wrapper onto MediaUpload to make sure the current user has Upload permissions.
+* Removed unused styles from editor.scss
+
 = 1.0.2 - Nov 28 2018 =
-* Added: Default PDF viewer width (600px) and height (300px)
-* Added: "Insert from URL" button to MediaPlaceholder
-* Removed: MediaPlaceholder labels name
-* Added: MediaPlaceholder labels instructions
-* Removed: BlockAlignmentToolbar
-* Added: Social call to action into README.md
+* Fixed PDF viewer file path
+* Added Default PDF viewer width (600px) and height (300px)
+* Added "Insert from URL" button to MediaPlaceholder
+* Removed MediaPlaceholder labels name
+* Added MediaPlaceholder labels instructions
+* Removed BlockAlignmentToolbar
+* Added wp-editor dependency to editor_assets
+* Added Social call to action into README.md
 
 = 1.0.1 - Nov 12 2018 =
-* Changed: MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
+* Changed MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
 
 = 1.0.0 - Sept 13 2018 =
 * Initial Release
 
 
-Algori PDF Viewer WordPress Plugin, Copyright 2018 Kevin Bazira.
-<br/>
-Algori PDF Viewer is distributed under the terms of the GNU GPL.
+Algori PDF Viewer WordPress Plugin, Copyright 2019 Kevin Bazira.<br/>
+Algori PDF Viewer is distributed under the terms of the GNU GPL.<br/><br/>
 
 
 _If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-pdf-viewer-lite.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-pdf-viewer-lite)

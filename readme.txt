@@ -2,10 +2,10 @@
 Contributors: kevinbazira
 Donate link: http://kevinbazira.com
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
-Requires at least: 4.9.8
-Tested up to: 5.0
+Requires at least: 5.0.0
+Tested up to: 5.1.1
 Requires PHP: 5.6.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -35,7 +35,8 @@ This free plugin has a lot to offer. Even more can be found in the Premium versi
 14. Supports keyboard shortcuts.
 15. Translatable into 100+ languages.
 16. Multiple PDF documents can be loaded on a single page.
-17. Easy to use and does not require any coding skills.
+17. Supports left, right, wide and full width alignments.
+18. Easy to use and does not require any coding skills.
 
 These features are enabled by default and can't be disabled in the free version. We released a Premium Plugin with many more exciting features that will enable you to enable/disable all the PDF viewer settings as you wish.
 
@@ -85,16 +86,23 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 == Changelog ==
 
+= 1.0.3 - Apr 30 2019 =
+* Upgraded cgb-scripts from 1.11.1 to 1.13.0
+* Improved documentation to match WP standards
+* Added MediaUploadCheck wrapper onto MediaUpload to make sure the current user has Upload permissions.
+* Removed unused styles from editor.scss
+
 = 1.0.2 - Nov 28 2018 =
-* Added: Default PDF viewer width (600px) and height (300px)
-* Added: "Insert from URL" button to MediaPlaceholder
-* Removed: MediaPlaceholder labels name
-* Added: MediaPlaceholder labels instructions
-* Removed: BlockAlignmentToolbar
-* Added: Social call to action into README.md
+* Fixed PDF viewer file path
+* Added Default PDF viewer width (600px) and height (300px)
+* Added "Insert from URL" button to MediaPlaceholder
+* Removed MediaPlaceholder labels name
+* Added MediaPlaceholder labels instructions
+* Removed BlockAlignmentToolbar
+* Added wp-editor dependency to editor_assets
 
 = 1.0.1 - Nov 12 2018 =
-* Changed: MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
+* Changed MediaPlaceholder and MediaUpload "type" to "allowedTypes" to support Gutenberg >= 4.2.0
 
-=  1.0.0 - Sept 13 2018 =
+= 1.0.0 - Sept 13 2018 =
 * Initial Release
