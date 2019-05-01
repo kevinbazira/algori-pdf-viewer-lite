@@ -30,6 +30,7 @@ const {
 	BlockAlignmentToolbar,
 	MediaPlaceholder,
 	MediaUpload,
+	MediaUploadCheck,
 	AlignmentToolbar,
 	RichText, 
 	BlockIcon,
@@ -43,6 +44,13 @@ const {
  */
 import './style.scss';
 import './editor.scss';
+
+
+/**
+ * Module Constants
+ */
+const ALLOWED_MEDIA_TYPES = [ 'application' ];
+
 
 const blockAttributes = {
 	title: {
@@ -143,19 +151,21 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			<Fragment>
 				<BlockControls>
 					<Toolbar>
-						<MediaUpload
-							onSelect={ onSelectPDF }
-							allowedTypes={ [ 'application' ] }
-							value={ id }
-							render={ ( { open } ) => (
-								<IconButton
-									className="components-toolbar__control"
-									label={ __( 'Change PDF' ) }
-									icon="edit"
-									onClick={ open }
-								/>
-							) }
-						/>
+						<MediaUploadCheck>
+							<MediaUpload
+								onSelect={ onSelectPDF }
+								allowedTypes={ ALLOWED_MEDIA_TYPES }
+								value={ id }
+								render={ ( { open } ) => (
+									<IconButton
+										className="components-toolbar__control"
+										label={ __( 'Change PDF' ) }
+										icon="edit"
+										onClick={ open }
+									/>
+								) }
+							/>
+						</MediaUploadCheck>
 					</Toolbar>
 				</BlockControls>
 				{ !! url && (
@@ -200,7 +210,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 						onSelect={ onSelectPDF }
 						onSelectURL={ onSelectURL }
 						accept="application/pdf"
-						allowedTypes={ [ 'application' ] }
+						allowedTypes={ ALLOWED_MEDIA_TYPES}
 						notices={ noticeUI }
 						onError={ noticeOperations.createErrorNotice }
 					/>
@@ -249,4 +259,35 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 		);
 		
 	},
+	
+	/**
+	 * Array of deprecated forms of this block.
+	 *
+	 * @link https://wordpress.org/gutenberg/handbook/block-api/deprecated-blocks/
+	 */
+	deprecated: [ 
+		{
+			attributes: {
+				...blockAttributes,
+			},
+			
+			save: ( { attributes, className } ) => {
+		
+				const { url, title, align, width, height, contentAlign, id } = attributes;
+				
+				return (
+					<div className="wp-block-cgb-block-algori-pdf-viewer">
+						<iframe 
+							className="wp-block-cgb-block-algori-pdf-viewer-iframe"
+							src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer-lite/dist/web/viewer.html?file=" + encodeURIComponent(url) }
+							style={ { width, height } }
+						>
+						</iframe>
+					</div>
+				);
+				
+			},
+		}
+	],
+	
 } );
