@@ -5,7 +5,7 @@ Contributors: [Kevin Bazira](http://kevinbazira.com)
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
 Requires at least: WP 5.0.0
-* Tested up to: WP 5.1.1
+* Tested up to: WP 5.2
 * Stable tag: 1.0.3
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
