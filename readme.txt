@@ -3,7 +3,7 @@ Contributors: kevinbazira
 Donate link: http://kevinbazira.com
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 Requires at least: 5.0.0
-Tested up to: 5.2
+Tested up to: 5.2.1
 Requires PHP: 5.6.0
 Stable tag: 1.0.3
 License: GNU General Public License v2 or later
@@ -72,7 +72,7 @@ Nope. Algori PDF Viewer only works with Gutenberg.
 
 = What theme works with Algori PDF Viewer? =
 
-Most WordPress themes that are optimized for Gutenberg will work well with Algori PDF Viewer. To get a full experience of the next-generation WordPress block editor, you’ll need a Gutenberg-ready WordPress theme, like [Algori Blogger](https://wordpress.org/themes/algori-blogger/).
+Most WordPress themes that are optimized for Gutenberg will work well with Algori PDF Viewer. To get a full experience of the next-generation WordPress block editor, you’ll need a Gutenberg-ready WordPress theme, like [Algori Blogger](https://wordpress.org/themes/algori-blogger/) or [Algori Shop](https://wordpress.org/themes/algori-shop/).
 
 = Why upgrade to Pro? =
 
