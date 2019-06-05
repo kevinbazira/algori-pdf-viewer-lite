@@ -5,7 +5,7 @@ Contributors: [Kevin Bazira](http://kevinbazira.com)
 Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
 Requires at least: WP 5.0.0
-* Tested up to: WP 5.2.1
+* Tested up to: WP 5.2
 * Stable tag: 1.0.3
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
@@ -72,7 +72,7 @@ Nope. Algori PDF Viewer only works with Gutenberg.
 
 = What theme works with Algori PDF Viewer? =
 
-Most WordPress themes that are optimized for Gutenberg will work well with Algori PDF Viewer. To get a full experience of the next-generation WordPress block editor, you�ll need a Gutenberg-ready WordPress theme, like [Algori Blogger](https://wordpress.org/themes/algori-blogger/) or [Algori Shop](https://wordpress.org/themes/algori-shop/).
+Most WordPress themes that are optimized for Gutenberg will work well with Algori PDF Viewer. To get a full experience of the next-generation WordPress block editor, youâ€™ll need a Gutenberg-ready WordPress theme, like [Algori Blogger](https://wordpress.org/themes/algori-blogger/) or [Algori Shop](https://wordpress.org/themes/algori-shop/).
 
 = Why upgrade to Pro? =
 
@@ -117,6 +117,6 @@ Algori PDF Viewer WordPress Plugin, Copyright 2019 Kevin Bazira.<br/>
 Algori PDF Viewer is distributed under the terms of the GNU GPL.<br/><br/>
 
 
-_If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-pdf-viewer-lite.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-pdf-viewer-lite)
+_If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-360-image.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-360-image)
 <br/>
 _Follow me 👋 on Twitter for more projects like this_ [![Tweet to say Hi](https://img.shields.io/twitter/follow/kevinbazira.svg?style=social&label=Tweet%20@kevinbazira)](https://twitter.com/kevinbazira/)
