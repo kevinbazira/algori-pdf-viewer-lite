@@ -117,6 +117,6 @@ Algori PDF Viewer WordPress Plugin, Copyright 2019 Kevin Bazira.<br/>
 Algori PDF Viewer is distributed under the terms of the GNU GPL.<br/><br/>
 
 
-_If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-360-image.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-360-image)
+_If you like this project, please 🌟 star it here_ [![GitHub stars](https://img.shields.io/github/stars/kevinbazira/algori-pdf-viewer-lite.svg?label=Stars&style=social)](https://github.com/kevinbazira/algori-pdf-viewer-lite)
 <br/>
 _Follow me 👋 on Twitter for more projects like this_ [![Tweet to say Hi](https://img.shields.io/twitter/follow/kevinbazira.svg?style=social&label=Tweet%20@kevinbazira)](https://twitter.com/kevinbazira/)
