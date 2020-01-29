@@ -3,7 +3,7 @@
  *
  * Algori PDF Viewer is a Gutenberg Block Plugin that enables you to easily display PDF documents directly on your website.
  */
- 
+
  
 /**
  * WordPress dependencies
@@ -34,7 +34,7 @@ const {
 	AlignmentToolbar,
 	RichText, 
 	BlockIcon,
-} = wp.editor; // Import * from @wordpress/editor 
+} = wp.blockEditor; // Import * from @wordpress/blockEditor 
 
 
 /**
@@ -114,7 +114,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 	],
 	
 	attributes: blockAttributes,  // Block attributes for editing in the block inspector.
-	
+
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
 	 * This represents what the editor will render when the block is used.
@@ -122,6 +122,9 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 	 * The "edit" property must be a valid function.
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
+	 *
+	 * @param {Object} props Props.
+	 * @returns {Mixed} JSX Component.
 	 */
 	edit: withNotices( ( { attributes, setAttributes, isSelected, className, noticeOperations, noticeUI } ) => {
 		
@@ -146,6 +149,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			}
 			
 		}
+		
 		
 		const controls = ( // Set Block and Inspector Controls
 			<Fragment>
@@ -225,7 +229,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 				<div className="wp-block-cgb-block-algori-pdf-viewer">
 					<iframe 
 						className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-						src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer-lite/dist/web/viewer.html?file=" + encodeURIComponent(url) }
+						src={ cgbGlobal.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 						style={ { width, height } }
 					>
 					</iframe>
@@ -242,6 +246,9 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 	 * The "save" property must be specified and must be a valid function.
 	 *
 	 * @link https://wordpress.org/gutenberg/handbook/block-api/block-edit-save/
+	 *
+	 * @param {Object} props Props.
+	 * @returns {Mixed} JSX Frontend HTML.
 	 */
 	save: ( { attributes, className } ) => {
 		
@@ -251,7 +258,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			<div className="wp-block-cgb-block-algori-pdf-viewer">
 				<iframe 
 					className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-					src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer-lite/dist/web/viewer.html?file=" + encodeURIComponent(url) }
+					src={ cgbGlobal.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 					style={ { width, height } }
 				>
 				</iframe>
@@ -279,7 +286,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 					<div className="wp-block-cgb-block-algori-pdf-viewer">
 						<iframe 
 							className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-							src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer-lite/dist/web/viewer.html?file=" + encodeURIComponent(url) }
+							src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer/dist/web/viewer.html?file=" + encodeURIComponent(url) }
 							style={ { width, height } }
 						>
 						</iframe>
