@@ -229,7 +229,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 				<div className="wp-block-cgb-block-algori-pdf-viewer">
 					<iframe 
 						className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-						src={ cgbGlobal.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
+						src={ cgbGlobal_AlgoriPDFViewer.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 						style={ { width, height } }
 					>
 					</iframe>
@@ -258,7 +258,7 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			<div className="wp-block-cgb-block-algori-pdf-viewer">
 				<iframe 
 					className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-					src={ cgbGlobal.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
+					src={ cgbGlobal_AlgoriPDFViewer.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 					style={ { width, height } }
 				>
 				</iframe>
