@@ -5,7 +5,7 @@ Tags: gutenberg, block, pdf viewer, portable document format, pdf embedder, pdf 
 Requires at least: 5.0.0
 Tested up to: 5.3
 Requires PHP: 5.6.0
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -90,7 +90,11 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 
 == Changelog ==
 
-= 1.0.4 - Jan 29 20120 =
+= 1.0.5 - Feb 06 2020 =
+* Added algoriPDFViewerPluginDirectoryPath to support smooth upgrades from versions <= 1.0.3
+* Fixed cgbGlobal conflict by using localized cgbGlobal_AlgoriPDFViewer
+
+= 1.0.4 - Jan 29 2020 =
 * Upgraded cgb-scripts from 1.13.0 to 1.22.0
 * Replaced algoriPDFViewerPluginDirectoryPath with cgbGlobal.pluginDirUrl.
 * Updated deprecated wp.editor.BlockControls to wp.blockEditor.BlockControls.
