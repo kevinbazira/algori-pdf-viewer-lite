@@ -56,13 +56,18 @@ function algori_pdf_viewer_cgb_block_assets() { // phpcs:ignore
 	// WP Localized globals. Use dynamic PHP stuff in JavaScript via `cgbGlobal` object.
 	wp_localize_script(
 		'algori_pdf_viewer-cgb-block-js',
-		'cgbGlobal', // Array containing dynamic data for a JS Global.
+		'cgbGlobal_AlgoriPDFViewer', // Array containing dynamic data for a JS Global.
 		[
 			'pluginDirPath' => plugin_dir_path( __DIR__ ),
 			'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
 			// Add more data here that you want to access from `cgbGlobal` object.
 		]
 	);
+	
+	// NB: Added to support upgrades from versions <= 1.0.3
+	// Localize path for Plugin Directory, so that I can acess it in JavaScript attached to 'algori_pdf_viewer-cgb-block-js' above.
+	$algori_pdf_viewer_plugin_directory_path = plugins_url();
+	wp_localize_script( 'algori_pdf_viewer-cgb-block-js', 'algoriPDFViewerPluginDirectoryPath', $algori_pdf_viewer_plugin_directory_path );
 
 	/**
 	 * Register Gutenberg block on server-side.
