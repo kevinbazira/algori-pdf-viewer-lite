@@ -17,8 +17,7 @@ const {
 	TextControl,  
 	SelectControl,
 	ToggleControl,
-	Toolbar, 
-	withNotices } = wp.components; // import { IconButton, PanelBody, RangeControl, ToggleControl, Toolbar, withNotices } from '@wordpress/components';
+	withNotices } = wp.components; // import { IconButton, PanelBody, RangeControl, ToggleControl, withNotices } from '@wordpress/components';
 const { Fragment } = wp.element; // import { Fragment } from '@wordpress/element';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
@@ -154,23 +153,6 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 		const controls = ( // Set Block and Inspector Controls
 			<Fragment>
 				<BlockControls>
-					<Toolbar>
-						<MediaUploadCheck>
-							<MediaUpload
-								onSelect={ onSelectPDF }
-								allowedTypes={ ALLOWED_MEDIA_TYPES }
-								value={ id }
-								render={ ( { open } ) => (
-									<IconButton
-										className="components-toolbar__control"
-										label={ __( 'Change PDF' ) }
-										icon="edit"
-										onClick={ open }
-									/>
-								) }
-							/>
-						</MediaUploadCheck>
-					</Toolbar>
 				</BlockControls>
 				{ !! url && (
 					<InspectorControls>
