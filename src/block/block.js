@@ -28,8 +28,8 @@ const {
 	PanelColorSettings,
 	BlockAlignmentToolbar,
 	MediaPlaceholder,
+	MediaReplaceFlow,
 	MediaUpload,
-	MediaUploadCheck,
 	AlignmentToolbar,
 	RichText, 
 	BlockIcon,
@@ -149,10 +149,23 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 			
 		}
 		
+		const onUploadError = ( message ) => {
+			noticeOperations.removeAllNotices();
+			noticeOperations.createErrorNotice( message );
+		}
 		
 		const controls = ( // Set Block and Inspector Controls
 			<Fragment>
 				<BlockControls>
+					<MediaReplaceFlow
+						mediaId={ id }
+						mediaURL={ url }
+						allowedTypes={ ALLOWED_MEDIA_TYPES }
+						accept="application/pdf"
+						onSelect={ onSelectPDF }
+						onSelectURL={ onSelectURL }
+						onError={ onUploadError }
+					/>
 				</BlockControls>
 				{ !! url && (
 					<InspectorControls>
