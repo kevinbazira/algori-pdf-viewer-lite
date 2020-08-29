@@ -112,6 +112,13 @@ registerBlockType( 'algori-pdf-viewer/block-algori-pdf-viewer', {
 		__( 'algori' ), 
 	],
 	
+	example: {
+		attributes: {
+			url: cgbGlobal_AlgoriPDFViewer.pluginDirUrl + "dist/web/compressed.tracemonkey-pldi-09.pdf",
+			width: 500
+		},
+	},
+	
 	attributes: blockAttributes,  // Block attributes for editing in the block inspector.
 
 	/**
