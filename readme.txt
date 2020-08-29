@@ -3,9 +3,9 @@ Contributors: kevinbazira
 Donate link: http://kevinbazira.com
 Tags: gutenberg, block, block editor, pdf viewer, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 Requires at least: 5.0.0
-Tested up to: 5.4
+Tested up to: 5.5
 Requires PHP: 5.6.0
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -49,6 +49,7 @@ Have a look at the [Premium Plugin here](https://codecanyon.net/item/algori-pdf-
 3. Click on the 'Activate' button to use your new plugin right away.
 4. Go [here for a guide on how to embed and display PDF documents on your WordPress site](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#documentation).
 5. Done :)
+6. PS: Remember to click the **Enable auto-updates** link for this plugin so that you don't miss cool new features as they come in.
 
 == How to use == 
 
@@ -89,6 +90,12 @@ Most WordPress themes that are optimized for Gutenberg will work well with Algor
 See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg)
 
 == Changelog ==
+
+= 1.0.7 - Aug 29 2020 =
+* Added block preview using example metadata
+* Updated Algori PDF Viewer namespace
+* Replaced block category 'common' with 'media'
+* Added block.json for WP block directory
 
 = 1.0.6 - June 17 2020 =
 * Removed Toolbar, MediaUploadCheck and deprecated wp.components.IconButton
