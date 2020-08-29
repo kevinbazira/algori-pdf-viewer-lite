@@ -1,0 +1,13 @@
+{
+	"name": "algori-pdf-viewer/block-algori-pdf-viewer",
+	"title": "Algori PDF Viewer",
+	"category": "media",
+	"description": "Add and display PDF documents directly on your WordPress website with ease",
+	"supports": {
+		"align": true
+	},
+	"textdomain": "algori-pdf-viewer",
+	"script": "file:./dist/blocks.build.js",
+	"editorStyle": "file:./dist/blocks.editor.build.css",
+	"style": "file:./dist/blocks.style.build.css"
+}
