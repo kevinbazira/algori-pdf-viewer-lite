@@ -80,7 +80,7 @@ function algori_pdf_viewer_cgb_block_assets() { // phpcs:ignore
 	 * @since 1.16.0
 	 */
 	register_block_type(
-		'cgb/block-algori-pdf-viewer', array(
+		'algori-pdf-viewer/block-algori-pdf-viewer', array(
 			// Enqueue blocks.style.build.css on both frontend & backend.
 			'style'         => 'algori_pdf_viewer-cgb-style-css',
 			// Enqueue blocks.build.js in the editor only.

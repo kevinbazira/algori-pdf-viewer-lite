@@ -95,7 +95,7 @@ const blockAttributes = {
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-algori-pdf-viewer', {
+registerBlockType( 'algori-pdf-viewer/block-algori-pdf-viewer', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	
 	title: __( 'PDF Viewer' ), // Block title.
@@ -221,9 +221,9 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 		return ( // Return PDF viewer with element settings (css classes) and block controls. Get PDF using either { url } or { id }
 			<Fragment>
 				{ controls }
-				<div className="wp-block-cgb-block-algori-pdf-viewer">
+				<div className="wp-block-algori-pdf-viewer-block-algori-pdf-viewer">
 					<iframe 
-						className="wp-block-cgb-block-algori-pdf-viewer-iframe"
+						className="wp-block-algori-pdf-viewer-block-algori-pdf-viewer-iframe"
 						src={ cgbGlobal_AlgoriPDFViewer.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 						style={ { width, height } }
 					>
@@ -250,9 +250,9 @@ registerBlockType( 'cgb/block-algori-pdf-viewer', {
 		const { url, title, align, width, height, contentAlign, id } = attributes;
 		
 		return (
-			<div className="wp-block-cgb-block-algori-pdf-viewer">
+			<div className="wp-block-algori-pdf-viewer-block-algori-pdf-viewer">
 				<iframe 
-					className="wp-block-cgb-block-algori-pdf-viewer-iframe"
+					className="wp-block-algori-pdf-viewer-block-algori-pdf-viewer-iframe"
 					src={ cgbGlobal_AlgoriPDFViewer.pluginDirUrl + "dist/web/viewer.html?file=" + encodeURIComponent(url) }
 					style={ { width, height } }
 				>
