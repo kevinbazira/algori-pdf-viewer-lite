@@ -3,7 +3,7 @@ Contributors: kevinbazira
 Donate link: http://kevinbazira.com
 Tags: gutenberg, block, block editor, pdf viewer, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 Requires at least: 5.0.0
-Tested up to: 5.5
+Tested up to: 5.8.1
 Requires PHP: 5.6.0
 Stable tag: 1.0.7
 License: GNU General Public License v2 or later
