@@ -5,7 +5,7 @@ Contributors: [Kevin Bazira](http://kevinbazira.com)
 Tags: gutenberg, block, block editor, pdf viewer, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
 Requires at least: WP 5.0.0
-* Tested up to: WP 5.8.1
+* Tested up to: WP 6.0
 * Stable tag: 1.0.7
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
@@ -136,7 +136,7 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 * Initial Release
 
 
-Algori PDF Viewer WordPress Plugin, Copyright 2021 Kevin Bazira.<br/>
+Algori PDF Viewer WordPress Plugin, Copyright 2022 Kevin Bazira.<br/>
 Algori PDF Viewer is distributed under the terms of the GNU GPL.<br/><br/>
 
 
