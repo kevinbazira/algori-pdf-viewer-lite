@@ -295,7 +295,7 @@ registerBlockType( 'algori-pdf-viewer/block-algori-pdf-viewer', {
 					<div className="wp-block-cgb-block-algori-pdf-viewer">
 						<iframe 
 							className="wp-block-cgb-block-algori-pdf-viewer-iframe"
-							src={ algoriPDFViewerPluginDirectoryPath + "/algori-pdf-viewer/dist/web/viewer.html?file=" + encodeURIComponent(url) }
+							src={ algoriPDFViewerPluginDirectoryPath.path + "/algori-pdf-viewer/dist/web/viewer.html?file=" + encodeURIComponent(url) }
 							style={ { width, height } }
 						>
 						</iframe>
