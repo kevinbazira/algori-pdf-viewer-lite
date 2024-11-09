@@ -5,8 +5,8 @@ Contributors: [Kevin Bazira](http://kevinbazira.com)
 Tags: gutenberg, block, block editor, pdf viewer, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 
 Requires at least: WP 5.0.0
-* Tested up to: WP 6.0
-* Stable tag: 1.0.7
+* Tested up to: WP 6.6.2
+* Stable tag: 1.0.8
 * License: GNU General Public License v2 or later
 * License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -49,7 +49,7 @@ Have a look at the [Premium Plugin here](http://www.kevinbazira.com/blog/article
 
 # Installation
 
-* Download the plugin, unzip it and move the unzipped folder to the "wp-content/plugins" directory in your WordPress installation.
+* Download the plugin, unzip it, rename unzipped folder to algori-pdf-viewer, and move it to the "wp-content/plugins" directory in your WordPress installation.
 * In your admin panel, go to Plugins and you'll find Algori PDF Viewer in the plugins section.
 * Click on the 'Activate' button to use your new plugin right away.
 * Go [here for a guide on how to embed and display PDF documents on your WordPress site](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg#documentation).
@@ -90,6 +90,10 @@ Most WordPress themes that are optimized for Gutenberg will work well with Algor
 See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg)
 
 # Changelog
+
+= 1.0.8 - Nov 07 2024 =
+* Updated pdf.js from 1.9.426 to 4.8.69
+* Tested up to WP 6.6.2
 
 = 1.0.7 - Aug 29 2020 =
 * Added block preview using example metadata
@@ -136,7 +140,7 @@ See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/
 * Initial Release
 
 
-Algori PDF Viewer WordPress Plugin, Copyright 2022 Kevin Bazira.<br/>
+Algori PDF Viewer WordPress Plugin, Copyright 2025 Kevin Bazira.<br/>
 Algori PDF Viewer is distributed under the terms of the GNU GPL.<br/><br/>
 
 

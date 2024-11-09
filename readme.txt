@@ -3,9 +3,9 @@ Contributors: kevinbazira
 Donate link: http://kevinbazira.com
 Tags: gutenberg, block, block editor, pdf viewer, pdf embedder, pdf print, pdf download, pdf file viewer, pdf reader, embed documents
 Requires at least: 5.0.0
-Tested up to: 6.0
+Tested up to: 6.6.2
 Requires PHP: 5.6.0
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.en.html
 
@@ -90,6 +90,10 @@ Most WordPress themes that are optimized for Gutenberg will work well with Algor
 See more details here [Premium Plugin features](http://www.kevinbazira.com/blog/article/algori-pdf-viewer-pro-for-wordpress-gutenberg)
 
 == Changelog ==
+
+= 1.0.8 - Nov 07 2024 =
+* Updated pdf.js from 1.9.426 to 4.8.69
+* Tested up to WP 6.6.2
 
 = 1.0.7 - Aug 29 2020 =
 * Added block preview using example metadata

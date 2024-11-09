@@ -5,7 +5,7 @@
  * Description: <strong>Algori PDF Viewer</strong> is a Gutenberg Block Plugin that enables you display PDF documents on your website. <strong>This will enable your visitors view and easily interact with your PDF files directly on your site</strong>.
  * Author: Kevin Bazira
  * Author URI: http://kevinbazira.com/
- * Version: 1.0.7
+ * Version: 1.0.8
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  *
