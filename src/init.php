@@ -67,7 +67,7 @@ function algori_pdf_viewer_cgb_block_assets() { // phpcs:ignore
 	// NB: Added to support upgrades from versions <= 1.0.3
 	// Localize path for Plugin Directory, so that I can acess it in JavaScript attached to 'algori_pdf_viewer-cgb-block-js' above.
 	$algori_pdf_viewer_plugin_directory_path = plugins_url();
-	wp_localize_script( 'algori_pdf_viewer-cgb-block-js', 'algoriPDFViewerPluginDirectoryPath', $algori_pdf_viewer_plugin_directory_path );
+	wp_localize_script( 'algori_pdf_viewer-cgb-block-js', 'algoriPDFViewerPluginDirectoryPath', [ 'path' => $algori_pdf_viewer_plugin_directory_path ] );
 
 	/**
 	 * Register Gutenberg block on server-side.
